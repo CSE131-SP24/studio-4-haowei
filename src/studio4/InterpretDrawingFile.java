@@ -20,5 +20,19 @@ public class InterpretDrawingFile {
 		File f = new File(chooser.getSelectedFile().getPath());
 		Scanner in = new Scanner(f); //making Scanner with a File
 		
+		
+		
+		String[] n = in.nextLine().split(" ");
+		
+		String shapeType = n[0];
+		int redComponent = Integer.parseInt(n[1]);
+		int greenComponent = Integer.parseInt(n[2]);
+	    int blueComponent = Integer.parseInt(n[3]);
+	    boolean isFilled = Boolean.parseBoolean(n[4]);
+	    
+	    
+	    System.out.println(isFilled);
 	}
+	
+	
 }
